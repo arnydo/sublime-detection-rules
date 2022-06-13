@@ -1,1 +1,12 @@
 
+name: "Test"
+description: |
+  For testing
+references:
+  - "https://domain.com"
+type: "rule"
+source: |
+  type.inbound
+  and any(subject, body in~ ('test'))
+tags:
+  - "test"
