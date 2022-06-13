@@ -7,6 +7,6 @@ references:
 type: "rule"
 source: |
   type.inbound
-  and any(subject, body in~ ('test'))
+  and iregex_search(subject.subject, 'test')
 tags:
   - "test"
